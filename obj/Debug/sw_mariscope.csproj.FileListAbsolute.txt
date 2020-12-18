@@ -1,0 +1,66 @@
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\sw_mariscope.exe.config
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\sw_mariscope.exe.manifest
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\sw_mariscope.application
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\sw_mariscope.exe
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\sw_mariscope.pdb
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\PagedControl.dll
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\TabControl.dll
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\Interop.AXISMEDIACONTROLLib.dll
+C:\Users\Informatica\source\repos\sw_mariscope\bin\Debug\AxInterop.AXISMEDIACONTROLLib.dll
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.csprojAssemblyReference.cache
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\Interop.AXISMEDIACONTROLLib.dll
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\AxInterop.AXISMEDIACONTROLLib.dll
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.csproj.ResolveComReference.cache
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.Form1.resources
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.Properties.Resources.resources
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.csproj.GenerateResource.cache
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.csproj.CoreCompileInputs.cache
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.exe.manifest
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.application
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.csproj.CopyComplete
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.exe
+C:\Users\Informatica\source\repos\sw_mariscope\obj\Debug\sw_mariscope.pdb
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\sw_mariscope.exe.config
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\sw_mariscope.exe.manifest
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\sw_mariscope.application
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\sw_mariscope.exe
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\sw_mariscope.pdb
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\PagedControl.dll
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\TabControl.dll
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\Interop.AXISMEDIACONTROLLib.dll
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\bin\Debug\AxInterop.AXISMEDIACONTROLLib.dll
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.csprojAssemblyReference.cache
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\Interop.AXISMEDIACONTROLLib.dll
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\AxInterop.AXISMEDIACONTROLLib.dll
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.csproj.ResolveComReference.cache
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.Form1.resources
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.Properties.Resources.resources
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.csproj.GenerateResource.cache
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.csproj.CoreCompileInputs.cache
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.exe.manifest
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.application
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.csproj.CopyComplete
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.exe
+C:\Users\Felipe Celis\Desktop\swMariscope-interfazV4.0\obj\Debug\sw_mariscope.pdb
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\sw_mariscope.exe.config
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\sw_mariscope.exe.manifest
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\sw_mariscope.application
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\sw_mariscope.exe
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\sw_mariscope.pdb
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\PagedControl.dll
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\TabControl.dll
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\Interop.AXISMEDIACONTROLLib.dll
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\bin\Debug\AxInterop.AXISMEDIACONTROLLib.dll
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.csprojAssemblyReference.cache
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\Interop.AXISMEDIACONTROLLib.dll
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\AxInterop.AXISMEDIACONTROLLib.dll
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.csproj.ResolveComReference.cache
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.Form1.resources
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.Properties.Resources.resources
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.csproj.GenerateResource.cache
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.csproj.CoreCompileInputs.cache
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.exe.manifest
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.application
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.csproj.CopyComplete
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.exe
+C:\Users\Informatica\Desktop\swMariscope-betamagallanes\obj\Debug\sw_mariscope.pdb
