@@ -49,7 +49,6 @@ namespace sw_mariscope
         #region serialport
         private void port_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-
             this.Invoke(new EventHandler(HandleGPSstring));
         }
         private void HandleGPSstring(object s, EventArgs e)
@@ -76,7 +75,7 @@ namespace sw_mariscope
         string ip_server = "http://192.168.2.251";
         string user = "root";
         string password = "admin";
-       
+
         //FIN VARIABLES GLOBALES
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -97,8 +96,8 @@ namespace sw_mariscope
             if (cbxPortCom.Items.Count > 0) cbxPortCom.SelectedIndex = 0;
             else
             {
-                MessageBox.Show(this, "There are no COM Ports detected on this computer.\nPlease install a COM Port and restart this app.", "No COM Ports Installed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
+                MessageBox.Show(this, "There are no COM Ports detected on this computer.\nPlease install a COM Port and restart this app.\n However, you can continue using the application. ", "No COM Ports Installed", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                //this.Close();
             }
         }
 
@@ -106,7 +105,7 @@ namespace sw_mariscope
         {
             AMC.Stop();
             AMC.EnableOverlays = false;
-          //string urlOver = $"{ip_server}/axis-cgi/param.cgi?action=update&Image.I0.Text.TextEnabled=yes&Image.I0.Text.String={txtOverlay.Text}&Image.I0.Text.Position={cbxPlaceText.Text}&Image.I0.Text.Color={cbxColorText.Text}&Image.I0.Text.BGColor={cbxBKcolor.Text}&camera=1";
+            //string urlOver = $"{ip_server}/axis-cgi/param.cgi?action=update&Image.I0.Text.TextEnabled=yes&Image.I0.Text.String={txtOverlay.Text}&Image.I0.Text.Position={cbxPlaceText.Text}&Image.I0.Text.Color={cbxColorText.Text}&Image.I0.Text.BGColor={cbxBKcolor.Text}&camera=1";
             string urlOver = $"{ip_server}/axis-cgi/param.cgi?action=update&Image.I0.Text.TextEnabled=yes&Image.I0.Text.String={txtOverlay.Text}&Image.I0.Text.Position={cbxPlaceText.Text}&Image.I0.Text.Color={cbxColorText.Text}&Image.I0.Text.BGColor={cbxBKcolor.Text}";
             NetworkCredential networkCredential = new NetworkCredential(user, password);
             WebRequest request = WebRequest.Create(urlOver);
@@ -125,8 +124,16 @@ namespace sw_mariscope
             txtOverlay.Text = "Mariscope Ingeniería ";
             lblLatitude.Text = "-";
             lblLongitude.Text = "-";
-            lblEstatePort.ForeColor = Color.Orange;
+            lblEstatePort.ForeColor = Color.IndianRed;
             lblEstatePort.Text = "¡Port Closed!";
+            lblRecording.Text = "";
+
+            if (cbxPortCom.Text == "")
+            {
+                btnOpenPort.Enabled = false;
+                button2.Enabled = false;
+            }
+            else btnOpenPort.Enabled = true;
             //-------------------------------------------------
             //Inicio de camara al iniciar software   ||
             //-------------------------------------------------
@@ -165,13 +172,13 @@ namespace sw_mariscope
             var itemsRes = new[] {
              new { Text = "1400x1050 (16:9)" , Value = "1400x1050" },
              new { Text = "1280x720 (16:9)"  , Value = "1280x960"  },
-             new { Text = "1024x768 (4:3)"  , Value = "1024x768"  },
-             new { Text = "800x600 (4:3)"   , Value = "800x600"   },
-             new { Text = "640x480 (4:3)"   , Value = "640x480"   },
-             new { Text = "480x360 (4:3)"   , Value = "480x360"   },
-             new { Text = "320x240 (4:3)"   , Value = "320x240"   },
-             new { Text = "240x180(4:3)"   , Value = "240x180"   },
-             new { Text = "160x120 (4:3)"   , Value = "160x120"   },
+             new { Text = "1024x768 (4:3)"   , Value = "1024x768"  },
+             new { Text = "800x600 (4:3)"    , Value = "800x600"   },
+             new { Text = "640x480 (4:3)"    , Value = "640x480"   },
+             new { Text = "480x360 (4:3)"    , Value = "480x360"   },
+             new { Text = "320x240 (4:3)"    , Value = "320x240"   },
+             new { Text = "240x180(4:3)"     , Value = "240x180"   },
+             new { Text = "160x120 (4:3)"    , Value = "160x120"   },
              new { Text = "1920x1080 (16:9)" , Value = "1920x1080" },
              new { Text = "1280x720 (16:9)"  , Value = "1280x720"  },
              new { Text = "854x480 (16:9)"   , Value = "854x480"   },
@@ -261,7 +268,7 @@ namespace sw_mariscope
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblHora.Text = DateTime.Now.ToLongTimeString();
-            lblFecha.Text = DateTime.Now.ToShortDateString();  
+            lblFecha.Text = DateTime.Now.ToShortDateString();
         }
 
         private void trackBar3_Scroll_1(object sender, EventArgs e)
@@ -388,33 +395,43 @@ namespace sw_mariscope
                 if (File.Exists(rutaDef))
                 {
                     AMC.SaveCurrentImage(0, rutaDef);
-                    
                 }
             }
         }
 
+            
         private void button9_Click(object sender, EventArgs e)
         {
             string DateAndTime = DateTime.Now.ToString("MM-dd-yyyy H.mm.ss");
 
             string folderVideo = @"C:\swdemo\video";
-            if (!Directory.Exists(folderVideo))
-            {
-                DirectoryInfo di = Directory.CreateDirectory(folderVideo);
-            }
+
+                if (!Directory.Exists(folderVideo))
+                {
+                    DirectoryInfo di = Directory.CreateDirectory(folderVideo);
+                }
+
+                string rutaGuardado = @"C:\swdemo\video\";
+                string formato = ".asf";
+
+                string dir = rutaGuardado + DateAndTime + formato;
+
+                AMC.StartRecordMedia(dir, 8, "0");
+                
+                btnRecord.ForeColor = Color.Green;
+                btnRecord.Enabled = false;
+                btnStopRecord.Enabled = true;
+                lblRecording.Text = "Recording ...";
 
             
-            string rutaGuardado = @"C:\swdemo\video\";
-            string formato = ".asf";
-
-            string dir = rutaGuardado + DateAndTime + formato;
-
-            AMC.StartRecordMedia(dir, 8, "0");
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             AMC.StopRecordMedia();
+            btnRecord.Enabled = true;
+            btnStopRecord.Enabled = false;
+            lblRecording.Text = "";
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
@@ -440,7 +457,6 @@ namespace sw_mariscope
         private void chkDate_CheckedChanged(object sender, EventArgs e)
         {
             txtOverlay.Text += " %D";
-
         }
 
         private void chkTime_CheckedChanged(object sender, EventArgs e)
@@ -464,7 +480,6 @@ namespace sw_mariscope
             if (this.WindowState == FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Normal;
-
             }
             else {
                 this.WindowState = FormWindowState.Maximized;
@@ -477,12 +492,12 @@ namespace sw_mariscope
             if (string.IsNullOrEmpty(txtSharp.Text) || Convert.ToInt32(txtSharp.Text) >= 100) {
                 txtSharp.Text = "";
             }
-            else{
+            else {
                 tckSharp.Value = Convert.ToInt32(txtSharp.Text);
                 tckSharp.Value += 1;
-                if (tckSharp.Value == tckSharp.Maximum) { 
+                if (tckSharp.Value == tckSharp.Maximum) {
 
-                    tckSharp.Value = tckSharp.Minimum; 
+                    tckSharp.Value = tckSharp.Minimum;
                 }
             }
 
@@ -644,7 +659,7 @@ namespace sw_mariscope
             }
 
             else {
-                txtOverlay.Text= txtOverlay.Text.Replace(" %T", string.Empty);
+                txtOverlay.Text = txtOverlay.Text.Replace(" %T", string.Empty);
             }
         }
 
@@ -690,18 +705,20 @@ namespace sw_mariscope
                 lblLongitude.Text = "-";
                 lblLatitude.Text = "-";
                 lblEstatePort.Text = "¡Port Closed!";
-                lblEstatePort.ForeColor = Color.Orange;
+                lblEstatePort.ForeColor = Color.IndianRed;
             }
             else
             {
                 // Set the port's settings
+                
                 comport.PortName = cbxPortCom.Text;
-
                 // Open the port
                 comport.Open();
                 btnOpenPort.Text = "Close Port";
                 lblEstatePort.Text = "¡Port Open!";
-                lblEstatePort.ForeColor = Color.Green;
+                lblLatitude.ForeColor = Color.GreenYellow;
+                lblLongitude.ForeColor = Color.GreenYellow;
+                lblEstatePort.ForeColor = Color.DarkSeaGreen;
                
             }
         }
@@ -717,8 +734,15 @@ namespace sw_mariscope
         private void button2_Click_2(object sender, EventArgs e)
         {
             string coordinates = $"Lat: {lblLatitude.Text} Lon: {lblLongitude.Text}";
-            txtOverlay.Text += coordinates;
+
+            if (btnOpenPort.Text == "") {
+                button2.Enabled = false;
+            }
+            else { 
+                txtOverlay.Text += coordinates;
+            }
         }
+
 
         #region GPS data
         private void GPS_PositionReceived(string Lat, string Lon)

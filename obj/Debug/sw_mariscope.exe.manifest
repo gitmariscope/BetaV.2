@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sw_mariscope.exe" size="2731016">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sw_mariscope.exe" size="2732040">
       <assemblyIdentity name="sw_mariscope" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pWV+KsPtoKFuRT2LlX97I0wTAflpzpyHV5bHFA64zWE=</dsig:DigestValue>
+        <dsig:DigestValue>Um16v4ixFh+w36bcXQ9VUw9l4qmbJGtVEmj+foZ62To=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

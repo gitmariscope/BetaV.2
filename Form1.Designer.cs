@@ -97,6 +97,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tab3 = new Manina.Windows.Forms.Tab();
             this.gbPortSettings = new System.Windows.Forms.GroupBox();
+            this.lblEstatePort = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.lblLongitude = new System.Windows.Forms.Label();
             this.lblLatitude = new System.Windows.Forms.Label();
@@ -119,7 +120,7 @@
             this.chkDate = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnOpenFolder = new System.Windows.Forms.Button();
-            this.lblEstatePort = new System.Windows.Forms.Label();
+            this.lblRecording = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tckContrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tckBright)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AMC)).BeginInit();
@@ -202,7 +203,7 @@
             this.btnImage.Image = ((System.Drawing.Image)(resources.GetObject("btnImage.Image")));
             this.btnImage.Location = new System.Drawing.Point(0, 0);
             this.btnImage.Name = "btnImage";
-            this.btnImage.Size = new System.Drawing.Size(478, 63);
+            this.btnImage.Size = new System.Drawing.Size(0, 63);
             this.btnImage.TabIndex = 19;
             this.btnImage.UseVisualStyleBackColor = false;
             this.btnImage.Click += new System.EventHandler(this.btnImage_Click_1);
@@ -452,6 +453,7 @@
             // btnRecord
             // 
             this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.btnRecord.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnRecord.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnRecord.FlatAppearance.BorderSize = 0;
             this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -601,16 +603,16 @@
             this.tab2.Controls.Add(this.label3);
             this.tab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.tab2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tab2.Location = new System.Drawing.Point(1, 32);
+            this.tab2.Location = new System.Drawing.Point(0, 0);
             this.tab2.Name = "tab2";
-            this.tab2.Size = new System.Drawing.Size(478, 637);
+            this.tab2.Size = new System.Drawing.Size(0, 0);
             this.tab2.Text = "Image";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label18.ForeColor = System.Drawing.Color.Firebrick;
             this.label18.Location = new System.Drawing.Point(391, 413);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(83, 13);
@@ -622,7 +624,7 @@
             // 
             this.lblSharpError.AutoSize = true;
             this.lblSharpError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSharpError.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lblSharpError.ForeColor = System.Drawing.Color.Firebrick;
             this.lblSharpError.Location = new System.Drawing.Point(392, 209);
             this.lblSharpError.Name = "lblSharpError";
             this.lblSharpError.Size = new System.Drawing.Size(67, 13);
@@ -634,7 +636,7 @@
             // 
             this.lblSaturError.AutoSize = true;
             this.lblSaturError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaturError.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lblSaturError.ForeColor = System.Drawing.Color.Firebrick;
             this.lblSaturError.Location = new System.Drawing.Point(391, 167);
             this.lblSaturError.Name = "lblSaturError";
             this.lblSaturError.Size = new System.Drawing.Size(64, 13);
@@ -646,7 +648,7 @@
             // 
             this.lblCntrError.AutoSize = true;
             this.lblCntrError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCntrError.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lblCntrError.ForeColor = System.Drawing.Color.Firebrick;
             this.lblCntrError.Location = new System.Drawing.Point(392, 130);
             this.lblCntrError.Name = "lblCntrError";
             this.lblCntrError.Size = new System.Drawing.Size(78, 13);
@@ -658,7 +660,7 @@
             // 
             this.lbltBrightError.AutoSize = true;
             this.lbltBrightError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltBrightError.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lbltBrightError.ForeColor = System.Drawing.Color.Firebrick;
             this.lbltBrightError.Location = new System.Drawing.Point(392, 90);
             this.lbltBrightError.Name = "lbltBrightError";
             this.lbltBrightError.Size = new System.Drawing.Size(65, 13);
@@ -955,7 +957,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(-1752, -2072);
+            this.label3.Location = new System.Drawing.Point(-1991, -2390);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 16);
             this.label3.TabIndex = 26;
@@ -1002,6 +1004,15 @@
             this.gbPortSettings.TabIndex = 78;
             this.gbPortSettings.TabStop = false;
             this.gbPortSettings.Text = "GPS";
+            // 
+            // lblEstatePort
+            // 
+            this.lblEstatePort.AutoSize = true;
+            this.lblEstatePort.Location = new System.Drawing.Point(46, 134);
+            this.lblEstatePort.Name = "lblEstatePort";
+            this.lblEstatePort.Size = new System.Drawing.Size(85, 18);
+            this.lblEstatePort.TabIndex = 9;
+            this.lblEstatePort.Text = "lblEstatePort";
             // 
             // button2
             // 
@@ -1221,7 +1232,7 @@
             this.chkTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkTime.AutoSize = true;
             this.chkTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.chkTime.Location = new System.Drawing.Point(-3968, -4852);
+            this.chkTime.Location = new System.Drawing.Point(-4924, -6124);
             this.chkTime.Name = "chkTime";
             this.chkTime.Size = new System.Drawing.Size(58, 21);
             this.chkTime.TabIndex = 28;
@@ -1234,7 +1245,7 @@
             this.chkDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkDate.AutoSize = true;
             this.chkDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.chkDate.Location = new System.Drawing.Point(-4100, -4852);
+            this.chkDate.Location = new System.Drawing.Point(-5056, -6124);
             this.chkDate.Name = "chkDate";
             this.chkDate.Size = new System.Drawing.Size(57, 21);
             this.chkDate.TabIndex = 27;
@@ -1268,14 +1279,16 @@
             this.btnOpenFolder.UseVisualStyleBackColor = false;
             this.btnOpenFolder.Click += new System.EventHandler(this.btnOpenFolder_Click);
             // 
-            // lblEstatePort
+            // lblRecording
             // 
-            this.lblEstatePort.AutoSize = true;
-            this.lblEstatePort.Location = new System.Drawing.Point(46, 134);
-            this.lblEstatePort.Name = "lblEstatePort";
-            this.lblEstatePort.Size = new System.Drawing.Size(85, 18);
-            this.lblEstatePort.TabIndex = 9;
-            this.lblEstatePort.Text = "lblEstatePort";
+            this.lblRecording.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblRecording.AutoSize = true;
+            this.lblRecording.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblRecording.Location = new System.Drawing.Point(616, 732);
+            this.lblRecording.Name = "lblRecording";
+            this.lblRecording.Size = new System.Drawing.Size(41, 13);
+            this.lblRecording.TabIndex = 77;
+            this.lblRecording.Text = "label22";
             // 
             // Form1
             // 
@@ -1283,6 +1296,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(1178, 788);
+            this.Controls.Add(this.lblRecording);
             this.Controls.Add(this.btnOpenFolder);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.panel2);
@@ -1323,6 +1337,7 @@
             this.gpDateAndTime.PerformLayout();
             this.gpPlaceText.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1417,6 +1432,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblEstatePort;
+        private System.Windows.Forms.Label lblRecording;
     }
 }
 
